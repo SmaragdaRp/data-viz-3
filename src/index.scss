@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#root {
+  @apply flex flex-col min-h-screen w-screen overflow-x-hidden;
+  header, footer {
+    @apply flex-grow-0 flex-shrink-0
+  }
+  > div.main-wrapper {
+    @apply flex flex-row flex-1;
+    aside {
+      @apply flex-shrink-0 flex-grow-0 max-w-[400px];
+    }
+  }
+}
+
+@import "scss/components/smaragda";
